@@ -1,0 +1,114 @@
+.contacto {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-light);
+}
+
+.contacto-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-form {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.contacto-form .btn-primary {
+  width: 100%;
+  margin-top: var(--spacing-sm);
+}
+
+.contacto-info {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.contacto-info h3 {
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.social-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateX(5px);
+}
+
+.social-icon {
+  font-size: 1.5rem;
+}
+
+.contact-details {
+  border-top: 2px solid #e0e0e0;
+  padding-top: var(--spacing-md);
+}
+
+.contact-details p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .contacto-content {
+    grid-template-columns: 1fr;
+  }
+}

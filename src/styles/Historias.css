@@ -1,0 +1,55 @@
+.historias {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-white);
+}
+
+.historias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.historia-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  color: var(--color-white);
+  position: relative;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.historia-card:hover {
+  transform: scale(1.05);
+}
+
+.quote-icon {
+  font-size: 4rem;
+  opacity: 0.3;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: Georgia, serif;
+}
+
+.historia-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 2rem 0 1.5rem;
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+}
+
+.historia-author {
+  font-weight: 600;
+  text-align: right;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .historias-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,88 @@
+.como-colaborar {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: var(--color-white);
+}
+
+.como-colaborar .section-title,
+.como-colaborar .section-text {
+  color: var(--color-white);
+}
+
+.section-text {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  line-height: 1.8;
+}
+
+.colaborar-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+  align-items: center;
+}
+
+.donacion-info {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.donacion-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.donacion-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.donacion-info li {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.donacion-cta {
+  text-align: center;
+}
+
+.btn-donate {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  padding: 1.5rem 3rem;
+  font-size: 1.3rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: var(--spacing-md);
+}
+
+.btn-donate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.legal-text {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .colaborar-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}

@@ -1,0 +1,61 @@
+.quienes-somos {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-white);
+}
+
+.intro {
+  margin-bottom: var(--spacing-lg);
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: var(--color-gray);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-lg);
+  line-height: 1.8;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.card p {
+  color: var(--color-gray);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+}

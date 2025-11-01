@@ -1,0 +1,98 @@
+.agenda {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-light);
+}
+
+.agenda-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.agenda-text {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+.agenda-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.agenda-highlight {
+  background: linear-gradient(135deg, var(--color-accent) 0%, #45a049 100%);
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+}
+
+.calendar-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.agenda-highlight h3 {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.dates-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dates-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: var(--spacing-sm);
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+.date {
+  font-weight: 700;
+  min-width: 120px;
+}
+
+.event {
+  flex: 1;
+  text-align: left;
+}
+
+.motivational-phrase {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.motivational-phrase p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .dates-list li {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .event {
+    text-align: center;
+  }
+}
