@@ -1,12 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// ...existing code...
 export default defineConfig({
+  base: "/fundacion-201-landing/", // ← Agrega esta línea
   plugins: [react()],
   server: {
-    host: "0.0.0.0", // Escucha en todas las interfaces
+    host: "0.0.0.0",
     port: 5173,
   },
 });
-// ...existing code...
